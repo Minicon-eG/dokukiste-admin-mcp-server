@@ -6,7 +6,7 @@
 
 **An open Minicon product for [DokuKiste](https://dokukiste.de).** Operate DokuKiste integrations, background jobs, API keys, users, AI providers and system maintenance from an MCP-compatible assistant.
 
-Current-instance OpenAPI schemas, correct API-key authentication, useful named tools and a searchable operation catalog. This release covers **527 reviewed operations** in the admin profile, including compatible API route aliases. See [API coverage](docs/API-COVERAGE.md).
+Current-instance OpenAPI schemas, correct API-key authentication, useful named tools and a searchable operation catalog. This release covers **525 reviewed operations** in the admin profile, including compatible API route aliases. See [API coverage](docs/API-COVERAGE.md).
 
 The companion [dokukiste-mcp-server](https://github.com/Minicon-eG/dokukiste-mcp-server) covers the other profile. Both products are standalone and MIT licensed. The DokuKiste backend is not included in this license.
 
