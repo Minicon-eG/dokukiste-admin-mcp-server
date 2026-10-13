@@ -1,0 +1,17 @@
+{
+  "name": "dokukiste-admin-mcp-server",
+  "version": "1.0.0",
+  "title": "DokuKiste Admin MCP Server",
+  "profile": "admin",
+  "tools": {
+    "dokukiste_admin_get_version": "GET /api/Admin/Version",
+    "dokukiste_admin_list_jobs": "GET /api/BackgroundJob",
+    "dokukiste_admin_get_job": "GET /api/BackgroundJob/{jobId}",
+    "dokukiste_admin_list_integrations": "GET /api/Integrations",
+    "dokukiste_admin_list_api_keys": "GET /api/ApiKeys",
+    "dokukiste_admin_list_users": "GET /api/Users",
+    "dokukiste_admin_list_audit_logs": "GET /api/AuditLogs",
+    "dokukiste_admin_health_live": "GET /health/live",
+    "dokukiste_admin_health_ready": "GET /health/ready"
+  }
+}
