@@ -1,6 +1,6 @@
 {
   "name": "dokukiste-admin-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "DokuKiste Admin MCP Server",
   "profile": "admin",
   "tools": {
