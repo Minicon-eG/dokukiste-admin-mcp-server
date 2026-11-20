@@ -1,12 +1,12 @@
 # API coverage
 
-Baseline: public DokuKiste OpenAPI 3.0.4, API v13.80.0, verified against backend commit `9406030dd34d04f05c6ae9e51e82811fe64dba08`. No controller or DTO API changes exist between v13.80.0 and this commit. Only the public API specification and reviewed route metadata are included; backend source code is not distributed.
+Baseline: public DokuKiste OpenAPI 3.0.4, API v13.90.0, verified against backend release commit `ac692f81685479a1c65a32375683da97d68bf7b1`. Only the public API specification and reviewed route metadata are included; backend source code is not distributed.
 
-This profile contains **525 reviewed HTTP operations**, including backward-compatible route aliases. The companion profile is disjoint. Read-only mode exposes only operations explicitly classified as read-only. The capabilities tool reports the actual instance version and available count.
+This profile contains **533 reviewed HTTP operations**, including backward-compatible route aliases. The companion profile is disjoint. Read-only mode exposes only operations explicitly classified as read-only. The capabilities tool reports the actual instance version and available count.
 
 Live mode loads the instance's specification on startup. Reviewed methods/routes must still exist; schemas come from that instance. Newly added or unreviewed methods/routes are not automatically exposed. The weekly contract workflow detects changed/removed inputs and new unreviewed routes. Update the reviewed policy before releasing support for new operations.
 
-Browser login/registration/password flows, OAuth callbacks, webhook receivers, browser video playback/media and UI/infrastructure routes are deliberately excluded. Media and learning routes whose controller authorization is not part of the reviewed Web source are conservatively assigned to admin. The backend remains responsible for API-key scopes, feature flags, document visibility and tenant permissions; profile separation does not grant permission.
+Browser login/registration/password flows, OAuth callbacks, webhook receivers, public token-based signing links for external recipients, browser video playback/media and UI/infrastructure routes are deliberately excluded. Media and learning routes whose controller authorization is not part of the reviewed Web source are conservatively assigned to admin. The backend remains responsible for API-key scopes, feature flags, document visibility and tenant permissions; profile separation does not grant permission.
 
 | Domain | Operations |
 |---|---:|
@@ -17,8 +17,10 @@ Browser login/registration/password flows, OAuth callbacks, webhook receivers, b
 | AccountingImport | 1 |
 | AccountingMandant | 2 |
 | AccountingOpos | 3 |
+| AccountingPaymentHold | 4 |
 | AccountingProvision | 2 |
 | AccountingReports | 6 |
+| AccountingTaxProfile | 1 |
 | AccountingTypeConfiguration | 4 |
 | AccountingVat | 2 |
 | AccountingVatSplitCorrection | 1 |
@@ -101,6 +103,7 @@ Browser login/registration/password flows, OAuth callbacks, webhook receivers, b
 | SevDeskAccountingTypes | 2 |
 | SevDeskMappings | 6 |
 | SevDeskSettings | 4 |
+| Signatory | 3 |
 | Signature | 1 |
 | SystemEmail | 3 |
 | SystemMaintenance | 5 |
