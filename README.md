@@ -6,7 +6,7 @@
 
 **An open Minicon product for [DokuKiste](https://dokukiste.de).** Operate DokuKiste integrations, background jobs, API keys, users, AI providers and system maintenance from an MCP-compatible assistant.
 
-Current-instance OpenAPI schemas, correct API-key authentication, useful named tools and a searchable operation catalog. This release covers **525 reviewed operations** in the admin profile, including compatible API route aliases. See [API coverage](docs/API-COVERAGE.md).
+Current-instance OpenAPI schemas, correct API-key authentication, useful named tools and a searchable operation catalog. This release covers **533 reviewed operations** in the admin profile, including compatible API route aliases. See [API coverage](docs/API-COVERAGE.md).
 
 The companion [dokukiste-mcp-server](https://github.com/Minicon-eG/dokukiste-mcp-server) covers the other profile. Both products are standalone and MIT licensed. The DokuKiste backend is not included in this license.
 
@@ -97,7 +97,7 @@ Binary inputs use `{"filename":"document.pdf","mimeType":"application/pdf","data
 | `DOKUKISTE_MAX_BYTES` | Per-call payload limit | `16777216` |
 | `DOKUKISTE_ALLOW_HTTP` | Allow a trusted non-loopback HTTP instance | `false` |
 
-Live mode fetches `/swagger/v1/swagger.json` and uses the instance's current request schemas. A discovery failure stops startup with an error; it never silently falls back to an obsolete API. Snapshot mode explicitly uses the bundled 13.80.0 contract. HTTPS is required except for loopback or an explicit trusted HTTP configuration. Redirects are rejected so credentials stay on the configured instance.
+Live mode fetches `/swagger/v1/swagger.json` and uses the instance's current request schemas. A discovery failure stops startup with an error; it never silently falls back to an obsolete API. Snapshot mode explicitly uses the bundled 13.90.0 contract. HTTPS is required except for loopback or an explicit trusted HTTP configuration. Redirects are rejected so credentials stay on the configured instance.
 
 ## Docker
 
